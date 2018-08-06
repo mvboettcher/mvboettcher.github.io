@@ -1,28 +1,247 @@
-.App {
-  text-align: center;
+body {
+  color: #13293d;
+  background-color: #e8f1f2;
+}
+/* #006494 primary */
+/* #247BA0 secondary */
+/* #1B98E0 cta */
+
+.hero-image {
+  height: 100vh;
+  background-image: url('/images/ravenel_bridge.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0.6;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.hero-background {
+  height: 100vh;
+  background-color: #006494;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.hero-font {
+  position: absolute;
+  z-index: 1;
+  font-size: 110px;
   color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  -webkit-animation: slowfade 1.5s;
+  -moz-animation: slowfade 1.5s;
+  -ms-animation: slowfade 1.5s;
+  -o-animation: slowfade 1.5s;
 }
 
-.App-title {
-  font-size: 1.5em;
+.info-section {
+  padding: 128px;
+  background-color: #006494;
+}
+.info-section2 {
+  padding: 128px;
+  background-color: #e8f1f2;
+}
+.info-section3 {
+  height: 100vh;
+  padding-bottom: 128px;
+  padding-top: 128px;
+  background-color: #13293d;
 }
 
-.App-intro {
-  font-size: large;
+.title-about {
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 30px;
+  font-size: 45px;
+  color: #e8f1f2;
+}
+.title-tools {
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 30px;
+  font-size: 45px;
+  color: #13293d;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.about-paragraph {
+  text-align: center;
+  letter-spacing: 1px;
+  color: #e8f1f2;
+  opacity: 0.5;
+  margin-bottom: 24px;
+  font-size: 22px;
+  max-width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.splitter-about {
+  margin-bottom: 30px;
+  width: 75px;
+  height: 4px;
+  border: none;
+  background: #e8f1f2;
+}
+.splitter-tools {
+  margin-bottom: 30px;
+  width: 75px;
+  height: 5px;
+  border: none;
+  background: #006494;
+}
+
+.btn-align {
+  padding: 50px;
+}
+
+.btn {
+  text-align: center;
+  font-weight: bold;
+  padding: 23px 40px;
+  border-radius: 300px;
+  border: none;
+  font-size: 22px;
+}
+
+.tools-container {
+  height: 60vh;
+  padding-top: 50px;
+  padding-left: 300px;
+  padding-right: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box-t {
+  height: 150px;
+  width: 150px;
+  background: #e8f1f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.row {
+  display: flex;
+}
+
+.projects-container {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box-p {
+  height: 400px;
+  width: 800px;
+  background-color: #e8f1f2;
+  margin: 0.5rem;
+}
+
+.info-container {
+  height: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-i {
+  height: 100px;
+  width: 100px;
+  margin: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+} */
+
+@keyframes slowfade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slowfade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Safari Chrome and Opera > 12.1 */
+@-webkit-keyframes slowfade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slowfade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes slowfade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
