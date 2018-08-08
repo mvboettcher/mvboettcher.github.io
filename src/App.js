@@ -51,21 +51,18 @@ class App extends Component {
                 <img src="/images/node_icon.png" alt="nodejs icon" />
               </div>
               <div className="box-t box-6">
-                <img src="/images/git_icon.png" alt="git icon" />
+                <img src="/images/mysql_icon.png" alt="git icon" />
               </div>
               <div className="box-t box-7">
-                <img src="/images/mysql_icon.png" alt="mysql icon" />
+                <img src="/images/couch-db_icon.png" alt="mysql icon" />
               </div>
               <div className="box-t box-8">
-                <img src="/images/couch-db_icon.png" alt="couch-db icon" />
+                <img src="/images/pouchdb_icon.png" alt="couch-db icon" />
               </div>
             </div>
             <div className="row">
               <div className="box-t box-9">
-                <img
-                  src="/images/vscode_icon.png"
-                  alt="visual studio code icon"
-                />
+                <img src="/images/git_icon.png" alt="visual studio code icon" />
               </div>
               <div className="box-t box-10">
                 <img src="/images/yarn_icon.png" alt="yarn icon" />
@@ -74,7 +71,7 @@ class App extends Component {
                 <img src="/images/npm_icon.png" alt="npm icon" />
               </div>
               <div className="box-t box-12">
-                <img src="/images/heroku_icon.png" alt="heroku icon" />
+                <img src="/images/vscode_icon.png" alt="heroku icon" />
               </div>
             </div>
           </div>
@@ -95,16 +92,16 @@ class App extends Component {
           <div className="info-container">
             <div className="row">
               <div className="box-i box-1">
-                <img src="/images/email-blue_icon.png" />
+                <img src="/images/email-blue_icon.png" alt="email icon" />
               </div>
               <div className="box-i box-2">
-                <img src="/images/linkedin_icon.png" />
+                <img src="/images/resume_icon.png" alt="resume icon" />
               </div>
               <div className="box-i box-3">
-                <img src="/images/resume_icon.png" />
+                <img src="/images/linkedin_icon.png" alt="linkedin icon" />
               </div>
               <div className="box-i box-4">
-                <img src="/images/github-info_icon.png" />
+                <img src="/images/github-info_icon.png" alt="github icon" />
               </div>
             </div>
           </div>
