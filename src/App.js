@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import './App.css'
+import NavBar from './components/NavBar'
 
 class App extends Component {
   render() {
     return (
       <div className="column">
+        <NavBar />
         <div>
           <div className="hero-font">Hi, I'm Max</div>
           <div className="hero-image" />
@@ -39,10 +41,7 @@ class App extends Component {
           >
             <div
               className="row"
-              style={{
-                width: '100%',
-                justifyContent: 'space-evenly'
-              }}
+              style={{ width: '100%', justifyContent: 'space-evenly' }}
             >
               <div className="box-t">
                 <img src="/images/react_icon.png" alt="react icon" />
@@ -59,10 +58,7 @@ class App extends Component {
             </div>
             <div
               className="row"
-              style={{
-                width: '100%',
-                justifyContent: 'space-evenly'
-              }}
+              style={{ width: '100%', justifyContent: 'space-evenly' }}
             >
               <div className="box-t">
                 <img src="/images/node_icon.png" alt="nodejs icon" />
@@ -79,10 +75,7 @@ class App extends Component {
             </div>
             <div
               className="row"
-              style={{
-                width: '100%',
-                justifyContent: 'space-evenly'
-              }}
+              style={{ width: '100%', justifyContent: 'space-evenly' }}
             >
               <div className="box-t">
                 <img src="/images/git_icon.png" alt="visual studio code icon" />
