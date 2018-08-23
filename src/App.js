@@ -1,108 +1,153 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
-import Header from './components/Header'
 import './App.css'
-
-// home about portolio contact
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
+      <div className="column">
         <div>
           <div className="hero-font">Hi, I'm Max</div>
           <div className="hero-image" />
           <div className="hero-background" />
         </div>
-        <div className="info-section">
+        <div
+          className="primary-container"
+          style={{ backgroundColor: '#006494' }}
+        >
           <div className="title-about">About Me</div>
-          <hr className="splitter-about" />
+          <hr className="divider" style={{ backgroundColor: '#e8f1f2' }} />
           <div className="about-paragraph">
-            Start Bootstrap has everything you need to get your new website up
-            and running in no time! All of the templates and themes on Start
-            Bootstrap are open source, free to download, and easy to use. No
-            strings attached!
+            I'm a full-stack web developer living in Charleston, SC. I recently
+            graduated from JRS Coding School, where I learned about JavaScript
+            development with a focus in functional programming. When I'm not
+            coding, I enjoy drinking craft beer and going on camping trips with
+            friends.
           </div>
           <center className="btn-align">
             <button className="btn">LEARN MORE</button>
           </center>
         </div>
-        <div className="info-section2">
+        <div
+          className="primary-container"
+          style={{ backgroundColor: '#e8f1f2' }}
+        >
           <div className="title-tools">Tools</div>
-          <hr className="splitter-tools" />
-          <div className="tools-container">
-            <div className="row">
-              <div className="box-t box-1">
+          <hr className="divider" style={{ backgroundColor: '#006494' }} />
+          <div
+            className="column"
+            style={{ width: '66%', alignItems: 'center' }}
+          >
+            <div
+              className="row"
+              style={{
+                width: '100%',
+                justifyContent: 'space-evenly'
+              }}
+            >
+              <div className="box-t">
                 <img src="/images/react_icon.png" alt="react icon" />
               </div>
-              <div className="box-t box-2">
+              <div className="box-t">
                 <img src="/images/html-5_icon.png" alt="html icon" />
               </div>
-              <div className="box-t box-3">
+              <div className="box-t">
                 <img src="/images/css_icon.png" alt="css icon" />
               </div>
-              <div className="box-t box-4">
+              <div className="box-t">
+                <img src="/images/redux_icon.png" alt="redux icon" />
+              </div>
+            </div>
+            <div
+              className="row"
+              style={{
+                width: '100%',
+                justifyContent: 'space-evenly'
+              }}
+            >
+              <div className="box-t">
+                <img src="/images/node_icon.png" alt="nodejs icon" />
+              </div>
+              <div className="box-t">
+                <img src="/images/mysql_icon.png" alt="git icon" />
+              </div>
+              <div className="box-t">
+                <img src="/images/couch-db_icon.png" alt="mysql icon" />
+              </div>
+              <div className="box-t">
                 <img src="/images/ramda_icon.png" alt="ramda icon" />
               </div>
             </div>
-            <div className="row">
-              <div className="box-t box-5">
-                <img src="/images/node_icon.png" alt="nodejs icon" />
-              </div>
-              <div className="box-t box-6">
-                <img src="/images/mysql_icon.png" alt="git icon" />
-              </div>
-              <div className="box-t box-7">
-                <img src="/images/couch-db_icon.png" alt="mysql icon" />
-              </div>
-              <div className="box-t box-8">
-                <img src="/images/pouchdb_icon.png" alt="couch-db icon" />
-              </div>
-            </div>
-            <div className="row">
-              <div className="box-t box-9">
+            <div
+              className="row"
+              style={{
+                width: '100%',
+                justifyContent: 'space-evenly'
+              }}
+            >
+              <div className="box-t">
                 <img src="/images/git_icon.png" alt="visual studio code icon" />
               </div>
-              <div className="box-t box-10">
+              <div className="box-t">
                 <img src="/images/yarn_icon.png" alt="yarn icon" />
               </div>
-              <div className="box-t box-11">
+              <div className="box-t">
                 <img src="/images/npm_icon.png" alt="npm icon" />
               </div>
-              <div className="box-t box-12">
+              <div className="box-t">
                 <img src="/images/vscode_icon.png" alt="heroku icon" />
               </div>
             </div>
           </div>
         </div>
-        <div className="info-section3">
+        <div
+          className="primary-container"
+          style={{ backgroundColor: '#13293d' }}
+        >
           <div className="title-about">Projects</div>
-          <hr className="splitter-about" />
-          <div className="projects-container">
-            <div className="box-p box-1" />
-            <div className="box-p box-2" />
-            <div className="box-p box-3" />
-            <div className="box-p box-4" />
+          <hr className="divider" style={{ backgroundColor: '#e8f1f2' }} />
+          <div className="row" style={{ justifyContent: 'center' }}>
+            <div className="box-p" />
+            <div className="box-p" />
           </div>
         </div>
-        <div className="info-section2">
+        <div
+          className="primary-container"
+          style={{ backgroundColor: '#e8f1f2' }}
+        >
           <div className="title-tools">Info</div>
-          <hr className="splitter-tools" />
-          <div className="info-container">
-            <div className="row">
-              <div className="box-i box-1">
-                <img src="/images/email-blue_icon.png" alt="email icon" />
-              </div>
-              <div className="box-i box-2">
-                <img src="/images/resume_icon.png" alt="resume icon" />
-              </div>
-              <div className="box-i box-3">
-                <img src="/images/linkedin_icon.png" alt="linkedin icon" />
-              </div>
-              <div className="box-i box-4">
-                <img src="/images/github-info_icon.png" alt="github icon" />
-              </div>
+          <hr className="divider" style={{ backgroundColor: '#006494' }} />
+          <div className="row" style={{ justifyContent: 'center' }}>
+            <div className="box-i">
+              <a href="mailto:mvboettcher@gmail.com">
+                <img
+                  src="/images/email-black-circle_icon.png"
+                  alt="email icon"
+                />
+              </a>
+            </div>
+            <div className="box-i">
+              <a href="/images/max-boettcher.pdf" download>
+                <img src="/images/resume-black2_icon.png" alt="resume icon" />
+              </a>
+            </div>
+            <div className="box-i">
+              <a
+                href="https://www.linkedin.com/in/maxboettcher/"
+                target="_blank"
+              >
+                <img
+                  src="/images/linkedin-circle-black_icon.png"
+                  alt="linkedin icon"
+                />
+              </a>
+            </div>
+            <div className="box-i">
+              <a href="https://github.com/mvboettcher" target="_blank">
+                <img
+                  src="/images/github-circle-black_icon.png"
+                  alt="github icon"
+                />
+              </a>
             </div>
           </div>
         </div>

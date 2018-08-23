@@ -44,18 +44,16 @@ body {
 }
 
 .info-section {
-  padding: 128px;
   background-color: #006494;
 }
-.info-section2 {
-  padding: 128px;
-  background-color: #e8f1f2;
-}
-.info-section3 {
-  height: 100vh;
-  padding-bottom: 128px;
+
+.primary-container {
   padding-top: 128px;
-  background-color: #13293d;
+  padding-bottom: 128px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title-about {
@@ -81,23 +79,13 @@ body {
   margin-bottom: 24px;
   font-size: 22px;
   max-width: 66%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.splitter-about {
-  margin-bottom: 30px;
-  width: 75px;
-  height: 4px;
-  border: none;
-  background: #e8f1f2;
-}
-.splitter-tools {
+.divider {
   margin-bottom: 30px;
   width: 75px;
   height: 5px;
   border: none;
-  background: #006494;
 }
 
 .btn-align {
@@ -113,35 +101,31 @@ body {
   font-size: 22px;
 }
 
-.tools-container {
-  height: 60vh;
-  padding-top: 50px;
-  padding-left: 300px;
-  padding-right: 300px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
 .box-t {
-  height: 150px;
-  width: 150px;
+  height: 175px;
+  width: 175px;
   background: #e8f1f2;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px;
   margin-left: 90px;
-  margin-right: 90px;
+  margin-right: 90px; */
 }
 
 .row {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 .projects-container {
-  height: 50vh;
+  /* height: 50vh; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -151,17 +135,9 @@ body {
 
 .box-p {
   height: 400px;
-  width: 800px;
+  width: 600px;
   background-color: #e8f1f2;
   margin: 0.5rem;
-}
-
-.info-container {
-  height: 30vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .box-i {
@@ -172,15 +148,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-/* .row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-} */
 
 @keyframes slowfade {
   0% {
