@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import './App.css'
 import NavBar from './components/NavBar'
+import Button from '@material-ui/core/Button'
+import Tooltip from '@material-ui/core/Tooltip'
+import Typography from '@material-ui/core/Typography'
 
 class App extends Component {
   render() {
@@ -37,23 +40,59 @@ class App extends Component {
           <hr className="divider" style={{ backgroundColor: '#006494' }} />
           <div
             className="column"
-            style={{ width: '66%', alignItems: 'center' }}
+            style={{ width: '75%', alignItems: 'center' }}
           >
             <div
               className="row"
               style={{ width: '100%', justifyContent: 'space-evenly' }}
             >
               <div className="box-t">
-                <img src="/images/react_icon.png" alt="react icon" />
+                <Tooltip
+                  placement="top"
+                  title={
+                    <Typography variant="display2" style={{ color: 'white' }}>
+                      React
+                    </Typography>
+                  }
+                >
+                  <img src="/images/react_icon.png" alt="react icon" />
+                </Tooltip>
               </div>
               <div className="box-t">
-                <img src="/images/html-5_icon.png" alt="html icon" />
+                <Tooltip
+                  placement="top"
+                  title={
+                    <Typography variant="display2" style={{ color: 'white' }}>
+                      HTML
+                    </Typography>
+                  }
+                >
+                  <img src="/images/html-5_icon.png" alt="html icon" />
+                </Tooltip>
               </div>
               <div className="box-t">
-                <img src="/images/css_icon.png" alt="css icon" />
+                <Tooltip
+                  placement="top"
+                  title={
+                    <Typography variant="display2" style={{ color: 'white' }}>
+                      CSS
+                    </Typography>
+                  }
+                >
+                  <img src="/images/css_icon.png" alt="css icon" />
+                </Tooltip>
               </div>
               <div className="box-t">
-                <img src="/images/redux_icon.png" alt="redux icon" />
+                <Tooltip
+                  placement="top"
+                  title={
+                    <Typography variant="display2" style={{ color: 'white' }}>
+                      Redux
+                    </Typography>
+                  }
+                >
+                  <img src="/images/redux_icon.png" alt="redux icon" />
+                </Tooltip>
               </div>
             </div>
             <div
@@ -61,16 +100,52 @@ class App extends Component {
               style={{ width: '100%', justifyContent: 'space-evenly' }}
             >
               <div className="box-t">
-                <img src="/images/node_icon.png" alt="nodejs icon" />
+                <Tooltip
+                  placement="top"
+                  title={
+                    <Typography variant="display2" style={{ color: 'white' }}>
+                      Node.js
+                    </Typography>
+                  }
+                >
+                  <img src="/images/node_icon.png" alt="nodejs icon" />
+                </Tooltip>
               </div>
               <div className="box-t">
-                <img src="/images/mysql_icon.png" alt="git icon" />
+                <Tooltip
+                  placement="top"
+                  title={
+                    <Typography variant="display2" style={{ color: 'white' }}>
+                      MySQL
+                    </Typography>
+                  }
+                >
+                  <img src="/images/mysql_icon.png" alt="git icon" />
+                </Tooltip>
               </div>
               <div className="box-t">
-                <img src="/images/couch-db_icon.png" alt="mysql icon" />
+                <Tooltip
+                  placement="top"
+                  title={
+                    <Typography variant="display2" style={{ color: 'white' }}>
+                      CouchDB
+                    </Typography>
+                  }
+                >
+                  <img src="/images/couch-db_icon.png" alt="mysql icon" />
+                </Tooltip>
               </div>
               <div className="box-t">
-                <img src="/images/ramda_icon.png" alt="ramda icon" />
+                <Tooltip
+                  placement="top"
+                  title={
+                    <Typography variant="display2" style={{ color: 'white' }}>
+                      Ramda
+                    </Typography>
+                  }
+                >
+                  <img src="/images/ramda_icon.png" alt="ramda icon" />
+                </Tooltip>
               </div>
             </div>
             <div
@@ -78,16 +153,55 @@ class App extends Component {
               style={{ width: '100%', justifyContent: 'space-evenly' }}
             >
               <div className="box-t">
-                <img src="/images/git_icon.png" alt="visual studio code icon" />
+                <Tooltip
+                  placement="top"
+                  title={
+                    <Typography variant="display2" style={{ color: 'white' }}>
+                      Git
+                    </Typography>
+                  }
+                >
+                  <img
+                    src="/images/git_icon.png"
+                    alt="visual studio code icon"
+                  />
+                </Tooltip>
               </div>
               <div className="box-t">
-                <img src="/images/yarn_icon.png" alt="yarn icon" />
+                <Tooltip
+                  placement="top"
+                  title={
+                    <Typography variant="display2" style={{ color: 'white' }}>
+                      Yarn
+                    </Typography>
+                  }
+                >
+                  <img src="/images/yarn_icon.png" alt="yarn icon" />
+                </Tooltip>
               </div>
               <div className="box-t">
-                <img src="/images/npm_icon.png" alt="npm icon" />
+                <Tooltip
+                  placement="top"
+                  title={
+                    <Typography variant="display2" style={{ color: 'white' }}>
+                      npm
+                    </Typography>
+                  }
+                >
+                  <img src="/images/npm_icon.png" alt="npm icon" />
+                </Tooltip>
               </div>
               <div className="box-t">
-                <img src="/images/vscode_icon.png" alt="heroku icon" />
+                <Tooltip
+                  placement="top"
+                  title={
+                    <Typography variant="display2" style={{ color: 'white' }}>
+                      Visual Studio Code
+                    </Typography>
+                  }
+                >
+                  <img src="/images/vscode_icon.png" alt="heroku icon" />
+                </Tooltip>
               </div>
             </div>
           </div>
@@ -98,7 +212,10 @@ class App extends Component {
         >
           <div className="title-about">Projects</div>
           <hr className="divider" style={{ backgroundColor: '#e8f1f2' }} />
-          <div className="row" style={{ justifyContent: 'center' }}>
+          <div
+            className="row"
+            style={{ width: '100%', justifyContent: 'center' }}
+          >
             <div className="box-p" />
             <div className="box-p" />
           </div>
