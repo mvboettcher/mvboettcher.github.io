@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import './App.css'
 import NavBar from './components/NavBar'
-import Button from '@material-ui/core/Button'
 import Tooltip from '@material-ui/core/Tooltip'
 import Typography from '@material-ui/core/Typography'
+import ProjectDescription from './components/ProjectDescription'
 
 class App extends Component {
   render() {
@@ -11,7 +11,9 @@ class App extends Component {
       <div className="column">
         <NavBar />
         <div>
-          <div className="hero-font">Hi, I'm Max</div>
+          <div className="hero-font">
+            <div>Hi, I'm Max</div>
+          </div>
           <div className="hero-image" />
           <div className="hero-background" />
         </div>
@@ -22,11 +24,10 @@ class App extends Component {
           <div className="title-about">About Me</div>
           <hr className="divider" style={{ backgroundColor: '#e8f1f2' }} />
           <div className="about-paragraph">
-            I'm a full-stack web developer living in Charleston, SC. I recently
-            graduated from JRS Coding School, where I learned about JavaScript
-            development with a focus in functional programming. When I'm not
-            coding, I enjoy drinking craft beer and going on camping trips with
-            friends.
+            I'm a full-stack software developer living in Charleston, SC and I'm
+            always looking for opportunities to challenge myself and improve my
+            programming skills. When I'm not coding, I like drinking craft beer
+            and going camping with my friends.
           </div>
           <center className="btn-align">
             <button className="btn">LEARN MORE</button>
@@ -50,48 +51,62 @@ class App extends Component {
                 <Tooltip
                   placement="top"
                   title={
-                    <Typography variant="display2" style={{ color: 'white' }}>
+                    <Typography variant="display1" style={{ color: 'white' }}>
                       React
                     </Typography>
                   }
                 >
-                  <img src="/images/react_icon.png" alt="react icon" />
+                  <a href="https://reactjs.org/" target="_blank">
+                    <img src="/images/react_icon.png" alt="react icon" />
+                  </a>
                 </Tooltip>
               </div>
               <div className="box-t">
                 <Tooltip
                   placement="top"
                   title={
-                    <Typography variant="display2" style={{ color: 'white' }}>
+                    <Typography variant="display1" style={{ color: 'white' }}>
                       HTML
                     </Typography>
                   }
                 >
-                  <img src="/images/html-5_icon.png" alt="html icon" />
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                    target="_blank"
+                  >
+                    <img src="/images/html-5_icon.png" alt="html icon" />
+                  </a>
                 </Tooltip>
               </div>
               <div className="box-t">
                 <Tooltip
                   placement="top"
                   title={
-                    <Typography variant="display2" style={{ color: 'white' }}>
+                    <Typography variant="display1" style={{ color: 'white' }}>
                       CSS
                     </Typography>
                   }
                 >
-                  <img src="/images/css_icon.png" alt="css icon" />
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                    target="_blank"
+                  >
+                    <img src="/images/css_icon.png" alt="css icon" />
+                  </a>
                 </Tooltip>
               </div>
               <div className="box-t">
                 <Tooltip
                   placement="top"
                   title={
-                    <Typography variant="display2" style={{ color: 'white' }}>
+                    <Typography variant="display1" style={{ color: 'white' }}>
                       Redux
                     </Typography>
                   }
                 >
-                  <img src="/images/redux_icon.png" alt="redux icon" />
+                  <a href="https://redux.js.org/" target="_blank">
+                    <img src="/images/redux_icon.png" alt="redux icon" />
+                  </a>
                 </Tooltip>
               </div>
             </div>
@@ -103,48 +118,56 @@ class App extends Component {
                 <Tooltip
                   placement="top"
                   title={
-                    <Typography variant="display2" style={{ color: 'white' }}>
+                    <Typography variant="display1" style={{ color: 'white' }}>
                       Node.js
                     </Typography>
                   }
                 >
-                  <img src="/images/node_icon.png" alt="nodejs icon" />
+                  <a href="https://nodejs.org/en/" target="_blank">
+                    <img src="/images/node_icon.png" alt="nodejs icon" />
+                  </a>
                 </Tooltip>
               </div>
               <div className="box-t">
                 <Tooltip
                   placement="top"
                   title={
-                    <Typography variant="display2" style={{ color: 'white' }}>
+                    <Typography variant="display1" style={{ color: 'white' }}>
                       MySQL
                     </Typography>
                   }
                 >
-                  <img src="/images/mysql_icon.png" alt="git icon" />
+                  <a href="https://www.mysql.com/" target="_blank">
+                    <img src="/images/mysql_icon.png" alt="git icon" />
+                  </a>
                 </Tooltip>
               </div>
-              <div className="box-t">
+              <div className="box-t" style={{ alignItems: 'flex-end' }}>
                 <Tooltip
                   placement="top"
                   title={
-                    <Typography variant="display2" style={{ color: 'white' }}>
+                    <Typography variant="display1" style={{ color: 'white' }}>
                       CouchDB
                     </Typography>
                   }
                 >
-                  <img src="/images/couch-db_icon.png" alt="mysql icon" />
+                  <a href="http://couchdb.apache.org/" target="_blank">
+                    <img src="/images/couch-db_icon.png" alt="mysql icon" />
+                  </a>
                 </Tooltip>
               </div>
               <div className="box-t">
                 <Tooltip
                   placement="top"
                   title={
-                    <Typography variant="display2" style={{ color: 'white' }}>
+                    <Typography variant="display1" style={{ color: 'white' }}>
                       Ramda
                     </Typography>
                   }
                 >
-                  <img src="/images/ramda_icon.png" alt="ramda icon" />
+                  <a href="https://ramdajs.com/" target="_blank">
+                    <img src="/images/ramda_icon.png" alt="ramda icon" />
+                  </a>
                 </Tooltip>
               </div>
             </div>
@@ -156,51 +179,56 @@ class App extends Component {
                 <Tooltip
                   placement="top"
                   title={
-                    <Typography variant="display2" style={{ color: 'white' }}>
+                    <Typography variant="display1" style={{ color: 'white' }}>
                       Git
                     </Typography>
                   }
                 >
-                  <img
-                    src="/images/git_icon.png"
-                    alt="visual studio code icon"
-                  />
+                  <a href="https://git-scm.com/" target="_blank">
+                    <img src="/images/git_icon.png" alt="git icon" />
+                  </a>
                 </Tooltip>
               </div>
               <div className="box-t">
                 <Tooltip
                   placement="top"
                   title={
-                    <Typography variant="display2" style={{ color: 'white' }}>
+                    <Typography variant="display1" style={{ color: 'white' }}>
                       Yarn
                     </Typography>
                   }
                 >
-                  <img src="/images/yarn_icon.png" alt="yarn icon" />
+                  <a href="https://yarnpkg.com/en/" target="_blank">
+                    <img src="/images/yarn_icon.png" alt="yarn icon" />
+                  </a>
                 </Tooltip>
               </div>
               <div className="box-t">
                 <Tooltip
                   placement="top"
                   title={
-                    <Typography variant="display2" style={{ color: 'white' }}>
+                    <Typography variant="display1" style={{ color: 'white' }}>
                       npm
                     </Typography>
                   }
                 >
-                  <img src="/images/npm_icon.png" alt="npm icon" />
+                  <a href="https://www.npmjs.com/" target="_blank">
+                    <img src="/images/npm_icon.png" alt="npm icon" />
+                  </a>
                 </Tooltip>
               </div>
               <div className="box-t">
                 <Tooltip
                   placement="top"
                   title={
-                    <Typography variant="display2" style={{ color: 'white' }}>
+                    <Typography variant="display1" style={{ color: 'white' }}>
                       Visual Studio Code
                     </Typography>
                   }
                 >
-                  <img src="/images/vscode_icon.png" alt="heroku icon" />
+                  <a href="https://code.visualstudio.com/" target="_blank">
+                    <img src="/images/vscode_icon.png" alt="heroku icon" />
+                  </a>
                 </Tooltip>
               </div>
             </div>
@@ -213,11 +241,14 @@ class App extends Component {
           <div className="title-about">Projects</div>
           <hr className="divider" style={{ backgroundColor: '#e8f1f2' }} />
           <div
-            className="row"
-            style={{ width: '100%', justifyContent: 'center' }}
+            className="column"
+            style={{
+              width: '100%',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}
           >
-            <div className="box-p" />
-            <div className="box-p" />
+            <ProjectDescription />
           </div>
         </div>
         <div
@@ -236,7 +267,7 @@ class App extends Component {
               </a>
             </div>
             <div className="box-i">
-              <a href="/images/max-boettcher.pdf" download>
+              <a href="/images/max-boettcher_2018.pdf" target="_blank">
                 <img src="/images/resume-black2_icon.png" alt="resume icon" />
               </a>
             </div>
