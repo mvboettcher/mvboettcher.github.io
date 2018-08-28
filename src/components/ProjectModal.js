@@ -8,8 +8,9 @@ import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import CloseIcon from '@material-ui/icons/Close'
 import Typography from '@material-ui/core/Typography'
+import Paper from '@material-ui/core/Paper'
 
-class ProjectDescription extends React.Component {
+class ProjectModal extends React.Component {
   state = {
     open: false,
     scroll: 'paper'
@@ -45,7 +46,7 @@ class ProjectDescription extends React.Component {
               <CloseIcon />
             </IconButton>
           </DialogActions>
-          <div className="column" style={{ alignItems: 'center' }}>
+          <DialogContent className="row" style={{ justifyContent: 'center' }}>
             <div className="box-d">
               <img
                 className="drafty-shot"
@@ -73,44 +74,33 @@ class ProjectDescription extends React.Component {
                 alt="draft map page"
               />
             </div>
-            <DialogTitle
-              id="scroll-dialog-title"
-              style={{ alignSelf: 'center' }}
+            <DialogContentText />
+          </DialogContent>
+          <DialogTitle id="scroll-dialog-title" style={{ alignSelf: 'center' }}>
+            <Typography
+              variant="display1"
+              className="row"
+              style={{
+                color: '#13293d',
+                maxWidth: '50%',
+                marginBottom: 40,
+                marginLeft: 60
+              }}
             >
-              <Typography variant="display3" style={{ color: '#13293d' }}>
-                Drafty
-              </Typography>
-            </DialogTitle>
-            <center>
-              <DialogContent>
-                <DialogContentText>
-                  <Typography
-                    variant="display1"
-                    className="row"
-                    style={{
-                      color: '#13293d',
-                      maxWidth: '50%',
-                      marginBottom: 40,
-                      justifyContent: 'center'
-                    }}
-                  >
-                    Drafty is a React app that I built for my final project at
-                    JRS Coding School. The app is focused on the Charleston area
-                    and allows users to search for craft breweries close to
-                    their current location or a given street address, using the
-                    Google Maps API. All brewery-related data is pulled from a
-                    CouchDB database that I created. Users can also add
-                    breweries they like to their own favorites list, which is
-                    managed using the browser’s local storage.
-                  </Typography>
-                </DialogContentText>
-              </DialogContent>
-            </center>
-          </div>
+              Drafty is a React app that I built for my final project at JRS
+              Coding School. The app is made for Charleston craft beer drinkers
+              and it allows users to search for craft breweries close to their
+              current location or to a given street address, using the Google
+              Maps API. Brewery data is located in a database that I created in
+              CouchDB. Users can also add breweries they like to their own
+              favorites list, which is managed using the browser’s local
+              storage.
+            </Typography>
+          </DialogTitle>
         </Dialog>
       </div>
     )
   }
 }
 
-export default ProjectDescription
+export default ProjectModal

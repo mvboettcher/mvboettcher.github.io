@@ -78,7 +78,7 @@ body {
   opacity: 0.5;
   margin-bottom: 24px;
   font-size: 22px;
-  max-width: 66%;
+  max-width: 50%;
 }
 
 .divider {
@@ -149,6 +149,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 1rem;
 }
 
