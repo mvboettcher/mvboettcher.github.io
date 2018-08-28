@@ -81,7 +81,7 @@ class ProjectDescription extends React.Component {
                 Drafty
               </Typography>
             </DialogTitle>
-            <div>
+            <center>
               <DialogContent>
                 <DialogContentText>
                   <Typography
@@ -95,17 +95,17 @@ class ProjectDescription extends React.Component {
                     }}
                   >
                     Drafty is a React app that I built for my final project at
-                    JRS Coding School. The app is focused specifically on the
-                    Charleston area and allows users to search for craft
-                    breweries close to your current location or a given street
-                    address, using the Google Maps API. All brewery-related data
-                    is pulled from a CouchDB database that I created. Users can
-                    also add breweries they like to their favorites list, which
-                    is managed using their browser’s local storage.
+                    JRS Coding School. The app is focused on the Charleston area
+                    and allows users to search for craft breweries close to
+                    their current location or a given street address, using the
+                    Google Maps API. All brewery-related data is pulled from a
+                    CouchDB database that I created. Users can also add
+                    breweries they like to their own favorites list, which is
+                    managed using the browser’s local storage.
                   </Typography>
                 </DialogContentText>
               </DialogContent>
-            </div>
+            </center>
           </div>
         </Dialog>
       </div>
